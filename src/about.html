@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>Builder</title>
+  </head>
+
+  <body>
+    <header id="navbar-fixed" class="bg-third-color absolute top-0 right-0 left-0 z-10 w-full">
+      <div class="container">
+        <div class="relative flex justify-between items-center">
+          <div class="px-5 py-3 lg:px-14 lg:py-7 2xl:px-28">
+            <a href="index.html" class="font-bold text-lg hover:text-yellow-500 lg:text-2xl 2xl:text-4xl">Builder</a>
+          </div>
+
+          <div class="px-5 py-3 lg:px-14 lg:py-7 2xl:px-28">
+            <button id="hamburger" class="flex justify-center items-center w-10 h-10 rounded-full hover:bg-black/10 lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+
+            <nav
+              id="navigasi"
+              class="w-full rounded-b-xl bg-third-color shadow-xl absolute left-0 top-full p-5 scale-0 origin-top transition duration-200 lg:scale-100 lg:static lg:rounded-none lg:shadow-none lg:bg-transparent lg:w-full lg:p-0"
+            >
+              <div class="flex flex-col gap-y-5 lg:flex-row lg:justify-center lg:items-center lg:gap-x-5">
+                <a href="index.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Home</a>
+                <a href="layanan.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Layanan</a>
+                <a href="project.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Project</a>
+                <a href="about.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Tentang Kami</a>
+                <a href="article.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Article</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="py-24 lg:pt-40">
+      <div class="container">
+        <h1 class="text-center font-bold text-3xl mb-14 lg:text-5xl lg:mb-24" data-aos="zoom-in">Tentang Kami</h1>
+        <section class="lg:flex lg:justify-center lg:gap-x-3 xl:gap-x-0">
+          <div class="sm:px-5 md:px-8 lg:w-2/5 lg:px-0" data-aos="fade-right">
+            <img src="../dist/img/about.jpg" alt="about" />
+          </div>
+
+          <div class="mt-10 px-5 md:px-8 lg:w-2/5 lg:mt-0 lg:px-10 xl:px-16" data-aos="fade-left">
+            <h3 class="uppercase text-center font-bold text-xl mb-5 lg:text-start lg:text-3xl">Builder</h3>
+            <p class="mb-3 tracking-wide xl:text-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum dolores repudiandae rerum ut quod tempore unde, dolorum voluptatem ea consequuntur obcaecati molestias sunt sequi cupiditate, itaque aliquam excepturi
+              deserunt inventore.
+            </p>
+            <p class="mb-3 tracking-wide xl:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, voluptatum? Adipisci suscipit, quasi enim velit ut nulla modi molestiae accusamus.</p>
+            <p class="tracking-wide xl:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, ullam.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <section class="py-20">
+      <div class="container">
+        <h2 class="text-center font-bold text-xl mb-5 lg:text-2xl" data-aos="fade-down">Visi</h2>
+        <p class="px-5 text-sm tracking-wide md:text-center lg:px-48 lg:text-lg" data-aos="zoom-in">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo labore ad vitae doloremque. Ducimus, quibusdam. Explicabo distinctio quia sequi?
+        </p>
+
+        <h2 class="text-center font-bold text-xl mt-10 mb-5 lg:text-2xl" data-aos="fade-down">Misi</h2>
+        <ol class="px-10 list-decimal flex justify-center items-center flex-col gap-y-5 lg:px-48" data-aos="zoom-in">
+          <li class="tracking-wide text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores corrupti laudantium dolorem voluptatibus, tenetur excepturi.</li>
+          <li class="tracking-wide text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores corrupti laudantium dolorem voluptatibus, tenetur excepturi.</li>
+          <li class="tracking-wide text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores corrupti laudantium dolorem voluptatibus, tenetur excepturi.</li>
+        </ol>
+      </div>
+    </section>
+
+    <footer class="bg-primary-color pt-3 pb-5">
+      <div class="container">
+        <div class="px-5 flex justify-between items-center lg:px-16">
+          <h6 class="text-xs font-medium text-fourth-color">Builder</h6>
+          <span class="text-xs text-fourth-color">&copy 2022 All Right Reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

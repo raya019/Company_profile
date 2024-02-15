@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>Builder</title>
+  </head>
+
+  <body>
+    <header id="navbar-fixed" class="bg-third-color absolute top-0 right-0 left-0 z-10 w-full">
+      <div class="container">
+        <div class="relative flex justify-between items-center">
+          <div class="px-5 py-3 lg:px-14 lg:py-7 2xl:px-28">
+            <a href="index.html" class="font-bold text-lg hover:text-yellow-500 lg:text-2xl 2xl:text-4xl">Builder</a>
+          </div>
+
+          <div class="px-5 py-3 lg:px-14 lg:py-7 2xl:px-28">
+            <button id="hamburger" class="flex justify-center items-center w-10 h-10 rounded-full hover:bg-black/10 lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+
+            <nav
+              id="navigasi"
+              class="w-full rounded-b-xl bg-third-color shadow-xl absolute left-0 top-full p-5 scale-0 origin-top transition duration-200 lg:scale-100 lg:static lg:rounded-none lg:shadow-none lg:bg-transparent lg:w-full lg:p-0"
+            >
+              <div class="flex flex-col gap-y-5 lg:flex-row lg:justify-center lg:items-center lg:gap-x-5">
+                <a href="index.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Home</a>
+                <a href="layanan.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Layanan</a>
+                <a href="project.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Project</a>
+                <a href="about.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Tentang Kami</a>
+                <a href="article.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Article</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="py-28 lg:py-40 lg:relative">
+      <div class="container">
+        <h1 class="text-center font-bold text-3xl mb-14 animate-faded lg:text-5xl">Project Kami</h1>
+        <div class="flex flex-wrap sm:justify-center sm:items-center">
+          <section id="navigasi_btn" class="px-5 flex justify-center items-center flex-wrap gap-3 animate-faded lg:w-2/12 lg:py-20 lg:px-14 lg:sticky lg:top-10 lg:self-start lg:flex-col lg:items-start">
+            <button
+              class="cursor-pointer text-yellow-500 hover:text-yellow-500 after:content-[''] after:block after:border-b after:border-black after:bg-black after:origin-center after:scale-x-0 after:hover:scale-x-100 after:transition-all lg:text-xl xl:text-2xl"
+            >
+              All
+            </button>
+
+            <button
+              class="cursor-pointer hover:text-yellow-500 after:content-[''] after:block after:border-b after:border-black after:bg-black after:origin-center after:scale-x-0 after:hover:scale-x-100 after:transition-all lg:text-xl xl:text-2xl"
+            >
+              Kantor
+            </button>
+
+            <button
+              class="cursor-pointer hover:text-yellow-500 after:content-[''] after:block after:border-b after:border-black after:bg-black after:origin-center after:scale-x-0 after:hover:scale-x-100 after:transition-all lg:text-xl xl:text-2xl"
+            >
+              Rumah
+            </button>
+
+            <button
+              class="cursor-pointer hover:text-yellow-500 after:content-[''] after:block after:border-b after:border-black after:bg-black after:origin-center after:scale-x-0 after:hover:scale-x-100 after:transition-all lg:text-xl xl:text-2xl"
+            >
+              Interior
+            </button>
+
+            <button
+              class="cursor-pointer hover:text-yellow-500 after:content-[''] after:block after:border-b after:border-black after:bg-black after:origin-center after:scale-x-0 after:hover:scale-x-100 after:transition-all lg:text-xl xl:text-2xl"
+            >
+              Design
+            </button>
+
+            <button
+              class="cursor-pointer hover:text-yellow-500 after:content-[''] after:block after:border-b-2 after:border-black after:bg-black after:origin-center after:scale-x-0 after:hover:scale-x-100 after:transition-all lg:text-xl xl:text-2xl"
+            ></button>
+          </section>
+
+          <section class="py-10 lg:w-4/5">
+            <div id="image_container" class="px-3 flex flex-wrap gap-5 animate-faded sm:px-16 md:justify-center md:px-3">
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/erin-doering-kFoh7gacj_0-unsplash.jpg" alt="erin-doering-kFoh7gacj_0-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/frames-for-your-heart-mR1CIDduGLc-unsplash.jpg" alt="frames-for-your-heart-mR1CIDduGLc-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/spacejoy-c0JoR_-2x3E-unsplash.jpg" alt="spacejoy-c0JoR_-2x3E-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/john-fornander-tVzyDSV84w8-unsplash.jpg" alt="john-fornander-tVzyDSV84w8-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/kara-eads-L7EwHkq1B2s-unsplash.jpg" alt="kara-eads-L7EwHkq1B2s-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/6d8b018d2c01c3b2f9618aec658be6ab_14.jpg" alt="6d8b018d2c01c3b2f9618aec658be6ab_14" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/jane-last-BSwQWHfdU8g-unsplash.jpg" alt="jane-last-BSwQWHfdU8g-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/todd-kent-178j8tJrNlc-unsplash.jpg" alt="todd-kent-178j8tJrNlc-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/95e522978934cca58c738cc860485a5d_24.jpg" alt="95e522978934cca58c738cc860485a5d_24" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/spacejoy-YqFz7UMm8qE-unsplash.jpg" alt="spacejoy-YqFz7UMm8qE-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/wu-yi-PdH0H4S6FTM-unsplash.jpg" alt="wu-yi-PdH0H4S6FTM-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/3f7a5b53ba41af7eba04cc3c1f2e5fb8_2011550.jpg" alt="3f7a5b53ba41af7eba04cc3c1f2e5fb8_2011550" />
+              </div>
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/erin-doering-kFoh7gacj_0-unsplash.jpg" alt="erin-doering-kFoh7gacj_0-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/frames-for-your-heart-mR1CIDduGLc-unsplash.jpg" alt="frames-for-your-heart-mR1CIDduGLc-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/spacejoy-c0JoR_-2x3E-unsplash.jpg" alt="spacejoy-c0JoR_-2x3E-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/john-fornander-tVzyDSV84w8-unsplash.jpg" alt="john-fornander-tVzyDSV84w8-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/kara-eads-L7EwHkq1B2s-unsplash.jpg" alt="kara-eads-L7EwHkq1B2s-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/6d8b018d2c01c3b2f9618aec658be6ab_14.jpg" alt="6d8b018d2c01c3b2f9618aec658be6ab_14" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/jane-last-BSwQWHfdU8g-unsplash.jpg" alt="jane-last-BSwQWHfdU8g-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/todd-kent-178j8tJrNlc-unsplash.jpg" alt="todd-kent-178j8tJrNlc-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/95e522978934cca58c738cc860485a5d_24.jpg" alt="95e522978934cca58c738cc860485a5d_24" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/spacejoy-YqFz7UMm8qE-unsplash.jpg" alt="spacejoy-YqFz7UMm8qE-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/wu-yi-PdH0H4S6FTM-unsplash.jpg" alt="wu-yi-PdH0H4S6FTM-unsplash" />
+              </div>
+
+              <div class="project cursor-pointer overflow-hidden md:w-2/5 xl:w-[28%] 2xl:w-[30%]">
+                <img class="hover:scale-105 transition duration-300 w-full h-full object-cover" src="../dist/img/3f7a5b53ba41af7eba04cc3c1f2e5fb8_2011550.jpg" alt="3f7a5b53ba41af7eba04cc3c1f2e5fb8_2011550" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-primary-color pt-3 pb-5">
+      <div class="container">
+        <div class="px-5 flex justify-between items-center lg:px-16">
+          <h6 class="text-xs font-medium text-fourth-color">Builder</h6>
+          <span class="text-xs text-fourth-color">&copy 2022 All Right Reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <section id="modal_project" class="hidden fixed inset-0 z-10 bg-black/70 transition-all duration-500">
+      <div id="modal_project_wrapper" class="h-full flex justify-center items-center animate-faded"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>Builder</title>
+  </head>
+
+  <body>
+    <header id="navbar-fixed" class="bg-third-color absolute top-0 right-0 left-0 z-10 w-full">
+      <div class="container">
+        <div class="relative flex justify-between items-center">
+          <div class="px-5 py-3 lg:px-14 lg:py-7 2xl:px-28">
+            <a href="index.html" class="font-bold text-lg hover:text-yellow-500 lg:text-2xl 2xl:text-4xl">Builder</a>
+          </div>
+
+          <div class="px-5 py-3 lg:px-14 lg:py-7 2xl:px-28">
+            <button id="hamburger" class="flex justify-center items-center w-10 h-10 rounded-full hover:bg-black/10 lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+
+            <nav
+              id="navigasi"
+              class="w-full rounded-b-xl bg-third-color shadow-xl absolute left-0 top-full p-5 scale-0 origin-top transition duration-200 lg:scale-100 lg:static lg:rounded-none lg:shadow-none lg:bg-transparent lg:w-full lg:p-0"
+            >
+              <div class="flex flex-col gap-y-5 lg:flex-row lg:justify-center lg:items-center lg:gap-x-5">
+                <a href="index.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Home</a>
+                <a href="layanan.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Layanan</a>
+                <a href="project.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Project</a>
+                <a href="about.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Tentang Kami</a>
+                <a href="article.html" class="text-base hover:text-second-color lg:text-xl 2xl:text-2xl">Article</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="py-24 lg:py-40">
+      <div class="container">
+        <h1 class="text-center font-bold text-3xl mb-16 lg:text-5xl lg:mb-24" data-aos="zoom-in">Layanan Kami</h1>
+        <section class="px-6 mb-10 lg:flex lg:justify-center lg:gap-8">
+          <div class="mb-5 lg:w-2/5" data-aos="fade-right">
+            <img class="rounded-md md:mx-auto" src="../dist/img/daniel-mccullough-HtBlQdxfG9k-unsplash.jpg" alt="daniel-mccullough-HtBlQdxfG9k-unsplash" />
+          </div>
+          <div class="lg:w-2/5 lg:px-5" data-aos="fade-left">
+            <h3 class="text-center font-bold text-lg mb-3 lg:text-start lg:text-2xl">Paket Desain</h3>
+            <p class="px-2 text-sm text-center tracking-wide lg:text-start lg:px-0 lg:text-base xl:text-lg 2xl:text-xl">
+              Kami melayani berbagai macam perencanaan jasa arsitek bangunan seperti rumah, kost-kostan, ruko, kantor, gudang, café, restaurant dan lain-lain.
+            </p>
+            <button class="block bg-second-color mx-auto mt-6 py-3 px-5 rounded-xl text-sm font-medium hover:text-third-color md:px-12 md:text-base lg:mt-6 lg:text-lg lg:mx-0">Hubungi Kami</button>
+          </div>
+        </section>
+
+        <section class="px-6 mb-10 lg:flex lg:justify-center lg:gap-8">
+          <div class="mb-5 lg:w-2/5" data-aos="fade-right">
+            <img class="rounded-md md:mx-auto" src="../dist/img/r-architecture-KQPEhYweLrQ-unsplash.jpg" alt="r-architecture-KQPEhYweLrQ-unsplash" />
+          </div>
+          <div class="lg:w-2/5 lg:px-5" data-aos="fade-left">
+            <h3 class="text-center font-bold text-lg mb-3 lg:text-start lg:text-2xl">Paket Bangun</h3>
+            <p class="px-2 text-sm text-center tracking-wide lg:text-start lg:px-0 lg:text-base xl:text-lg 2xl:text-xl">
+              Kami melayani jasa bangun rumah sesuai desain arsitek dan sesuai dengan rencana anggaran biaya yang telah disepakati.
+            </p>
+            <button class="block bg-second-color mx-auto mt-6 py-3 px-5 rounded-xl text-sm font-medium hover:text-third-color md:px-12 md:text-base lg:mt-6 lg:text-lg lg:mx-0">Hubungi Kami</button>
+          </div>
+        </section>
+
+        <section class="px-6 mb-10 lg:flex lg:justify-center lg:gap-8">
+          <div class="mb-5 lg:w-2/5" data-aos="fade-right">
+            <img class="rounded-md md:mx-auto" src="../dist/img/sidekix-media-t294_ZZP2pg-unsplash.jpg" alt="sidekix-media-t294_ZZP2pg-unsplash" />
+          </div>
+          <div class="lg:w-2/5 lg:px-5" data-aos="fade-left">
+            <h3 class="text-center font-bold text-lg mb-3 lg:text-start lg:text-2xl">Paket Interior</h3>
+            <p class="px-2 text-sm text-center tracking-wide lg:text-start lg:px-0 lg:text-base xl:text-lg 2xl:text-xl">Kami melayani jasa desain interior dan furniture custom untuk memenuhi kebutuhan rumah impian Anda</p>
+            <button class="block bg-second-color mx-auto mt-6 py-3 px-5 rounded-xl text-sm font-medium hover:text-third-color md:px-12 md:text-base lg:mt-6 lg:text-lg lg:mx-0">Hubungi Kami</button>
+          </div>
+        </section>
+
+        <section class="px-6 mb-10 lg:flex lg:justify-center lg:gap-8">
+          <div class="mb-5 lg:w-2/5" data-aos="fade-right">
+            <img class="rounded-md md:mx-auto" src="../dist/img/milivoj-kuhar-Te48TPzdcU8-unsplash.jpg" alt="milivoj-kuhar-Te48TPzdcU8-unsplash" />
+          </div>
+          <div class="lg:w-2/5 lg:px-5" data-aos="fade-left">
+            <h3 class="text-center font-bold text-lg mb-3 lg:text-start lg:text-2xl">Paket Renovation</h3>
+            <p class="px-2 text-sm text-center tracking-wide lg:text-start lg:px-0 lg:text-base xl:text-lg 2xl:text-xl">Kami melayani jasa renovation untuk membuat rumah impian anda tetap aman.</p>
+            <button class="block bg-second-color mx-auto mt-6 py-3 px-5 rounded-xl text-sm font-medium hover:text-third-color md:px-12 md:text-base lg:mt-6 lg:text-lg lg:mx-0">Hubungi Kami</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-primary-color pt-3 pb-5">
+      <div class="container">
+        <div class="px-5 flex justify-between items-center lg:px-16">
+          <h6 class="text-xs font-medium text-fourth-color">Builder</h6>
+          <span class="text-xs text-fourth-color">&copy 2022 All Right Reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
